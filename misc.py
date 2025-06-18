@@ -4,7 +4,9 @@ import pylab as pl
 import numpy as np
 import ffmpeg_wrap
 
-from collections import defaultdict, OrderedDict, Callable
+from collections import defaultdict, OrderedDict
+from collections.abc import Callable
+
 class OrderedDefaultDict(OrderedDict):
     # Source: http://stackoverflow.com/a/6190500/562769
     def __init__(self, default_factory=None, *a, **kw):
